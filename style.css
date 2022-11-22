@@ -63,7 +63,7 @@ body {
 
 
 .email input {
-    width: 430px;
+    width: 250px;
     height: 40px;
     padding: 5px;
 }
@@ -117,7 +117,7 @@ hr {
     color: white;
     font-size: 18px;
     line-height: 25px;
-    padding: 0px 20px;
+    padding: 0px 20px 0px 0px;
 }
 
 .container1 .text,
@@ -127,13 +127,13 @@ hr {
 }
 
 .tv {
-    width: 400px
+    width: 300px
 }
 
 .container1 .tv,
 .container2 .images,
 .container4 .images {
-    width: 400px;
+    width: 300px;
 }
 
 
@@ -223,13 +223,15 @@ hr {
 }
 
 .ready-btn {
-    width: 30%;
+    width: 45%;
     height: 43px;
     color: #fff;
     background: red;
     margin: 10px 0px 40px 0px;
     font-size: 16px;
     border-radius: 5px;
+    border: none;
+    margin-top: 20px;
 }
 
 /* FOOTER */
@@ -303,6 +305,7 @@ footer {
 
 
 @media screen and (min-width:768px) {
+
     .logo {
         width: 150px;
     }
@@ -351,11 +354,14 @@ footer {
         margin: 0px 0px 0px 0px;
     }
 
-    .container1 {
+    .container1,
+    .container2,
+    .container4 {
         justify-content: space-between !important;
         flex-direction: row;
         align-items: center;
         text-align: left;
+        padding: 10px 60px;
     }
 
     .container1 .text,
@@ -375,7 +381,7 @@ footer {
     }
 
     .container1 .text p,
-    .container .text p,
+    .container2 .text p,
     .container3 .text p,
     .container4 .text p {
         font-size: 20px;
@@ -385,14 +391,13 @@ footer {
     .container1 .tv,
     .container2 .images,
     .container4 .images {
-        width: 600px;
+        width: 350px;
         text-align: left;
-        padding-right: 200px;
+
     }
 
     .container2 {
         flex-direction: row-reverse;
-        align-items: center;
 
     }
 
@@ -403,10 +408,8 @@ footer {
     }
 
     .container4 {
-        justify-content: space-evenly !important;
         flex-direction: row-reverse;
-        text-align: center;
-        align-items: center;
+      
 
     }
 
