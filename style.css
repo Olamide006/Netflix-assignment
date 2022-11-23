@@ -406,6 +406,12 @@ footer {
         width: 250px;
 
     }
+    .container3 h1{
+        padding-left: 20px;
+    }
+    .container3 p{
+        padding-left: 20px;
+    }
 
     .container4 {
         flex-direction: row-reverse;
